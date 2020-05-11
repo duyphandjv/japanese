@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener  {
 
         findImage("a")
 
-        datas = mutableListOf("a", "ka", "sa", "ta", "na", "ha", "ma", "ya", "ra", "wa", "na","All")
+        datas = mutableListOf("a", "ka", "sa", "ta", "na", "ha", "ma", "ya", "ra", "wa", "n","All")
 
         init()
 
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener  {
         hashMap.put("ma", mutableListOf("ma", "mi", "mu", "me", "mo"))
         hashMap.put("ya", mutableListOf("ya", "yu", "yo"))
         hashMap.put("ra", mutableListOf("ra", "ri", "ru", "re", "ro"))
-        hashMap.put("wa", mutableListOf("wa","wo"))
+        hashMap.put("wa", mutableListOf("wa","o(wo)"))
         hashMap.put("n", mutableListOf("n"))
         hashMap.put("All", mutableListOf("a", "i", "u", "e", "o","ka", "ki", "ku", "ke", "ko","sa", "shi", "su", "se", "so","ta", "chi", "tsu", "te", "to"
             ,"na", "ni", "nu", "ne", "no","ha", "hi", "fu", "he", "ho","ma", "mi", "mu", "me", "mo","ya", "yu", "yo","ra", "ri", "ru", "re", "ro","wa","wo","n"))
