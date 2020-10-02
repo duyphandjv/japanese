@@ -1,6 +1,5 @@
 package com.phanduy.japanese
 
-import android.graphics.SurfaceTexture
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.TypedValue
@@ -74,7 +73,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener  {
         // Set Adapter to Spinner
         spinner!!.setAdapter(aa)
 
-        spinner!!.setOnItemSelectedListener(this)
+        spinner!!.onItemSelectedListener = this
         randomWord()
 
     }

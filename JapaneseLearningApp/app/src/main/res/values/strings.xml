@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TekoProduct</string>
+    <string name="product_detail_title">Detail</string>
+    <string name="product_empty">No productFull Found!</string>
+
+    <string name="sku_title"><d>Mã SP:</d></string>
+    <string name="relateTitle">Sản phẩm cùng loại</string>
+    <string name="search_hint">Nhập tên, mã sản phẩm</string>
+
+    <string name="tab_description">Mô tả sản phẩm</string>
+    <string name="tab_spec">Thông số kĩ thuật</string>
+    <string name="tab_price_compare">So sánh giá</string>
+
+    <string name="added_to_cart">Đã thêm vào giỏ</string>
+    <string name="function_not_implement">Tính năng đang phát triển!</string>
+
+    <!--   Error messages -->
+    <string name="network_error">Mất kết nối mạng!</string>
+    <string name="data_error">Không tìm thấy dữ liệu!</string>
+    <string name="server_error">Có lỗi xảy ra!</string>
+
+
+
+    <!-- Font family-->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+</resources>

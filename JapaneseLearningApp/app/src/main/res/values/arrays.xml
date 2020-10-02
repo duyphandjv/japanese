@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="groups">
+        <item>a</item>
+        <item>ka</item>
+        <item>sa</item>
+        <item>ta</item>
+        <item>na</item>
+        <item>ha</item>
+        <item>ma</item>
+        <item>ya</item>
+        <item>ra</item>
+        <item>wa</item>
+        <item>n</item>
+        <item>All</item>
+    </string-array>
+</resources>
