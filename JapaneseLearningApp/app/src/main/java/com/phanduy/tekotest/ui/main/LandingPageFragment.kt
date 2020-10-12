@@ -35,8 +35,14 @@ class LandingPageFragment : Fragment() {
 
             callback = object : Callback {
 
-                override fun goToLearning() {
+                override fun goToLearningHiraganaAlphabet() {
                     // view.findNavController().navigate(action_landing_page_to_learning_fragment)
+                    val direction =
+                        LandingPageFragmentDirections.actionLandingPageToLearningFragment()
+                    findNavController().navigate(direction)
+                }
+
+                override fun goToLearningKatakanaAlphabet() {
                     val direction =
                         LandingPageFragmentDirections.actionLandingPageToLearningFragment()
                     findNavController().navigate(direction)
@@ -54,7 +60,8 @@ class LandingPageFragment : Fragment() {
     }
 
     interface Callback {
-        fun goToLearning()
+        fun goToLearningHiraganaAlphabet()
+        fun goToLearningKatakanaAlphabet()
         fun goToGaming()
     }
 }

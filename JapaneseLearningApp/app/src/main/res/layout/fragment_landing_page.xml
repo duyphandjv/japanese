@@ -17,17 +17,29 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnLearning"
+            android:id="@+id/btnLearningHira"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Learning"
-            android:onClick="@{() -> callback.goToLearning()}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnGaming"
-            app:layout_constraintHorizontal_chainStyle="packed"
+            android:text="Learning Hiragana"
+            android:onClick="@{() -> callback.goToLearningHiraganaAlphabet()}"
+            app:layout_constraintBottom_toTopOf="@+id/btnLearningKata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLearningKata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Learning Katakana"
+            android:onClick="@{() -> callback.goToLearningKatakanaAlphabet()}"
+            app:layout_constraintBottom_toTopOf="@+id/btnGaming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLearningHira" />
 
         <Button
             android:id="@+id/btnGaming"
@@ -38,8 +50,8 @@
             android:onClick="@{() -> callback.goToGaming()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnLearning"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLearningKata" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

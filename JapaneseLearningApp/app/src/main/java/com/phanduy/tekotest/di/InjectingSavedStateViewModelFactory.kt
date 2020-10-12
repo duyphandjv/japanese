@@ -9,6 +9,7 @@ import com.phanduy.tekotest.data.repository.ProductApiRepository
 import com.phanduy.tekotest.data.repository.ProductCartRepository
 import com.phanduy.tekotest.factory.ProductDetailViewModelFactory
 import com.phanduy.tekotest.viewmodel.GamingViewModel
+import com.phanduy.tekotest.viewmodel.KatakanaViewModel
 import com.phanduy.tekotest.viewmodel.LearningViewModel
 import com.phanduy.tekotest.viewmodel.ProductDetailViewModel
 import dagger.Reusable
@@ -73,6 +74,25 @@ class InjectingSavedStateViewModelFactory @Inject constructor(
             ): T {
                 val viewModel =
                     LearningViewModel(handle) as T
+
+                try {
+                    @Suppress("UNCHECKED_CAST")
+                    return viewModel as T
+                } catch (e: Exception) {
+                    throw RuntimeException(e)
+                }
+            }
+        }
+
+    fun createKatakanaFactory(owner: SavedStateRegistryOwner, defaultArgs: Bundle? = null) =
+        object : AbstractSavedStateViewModelFactory(owner, defaultArgs) {
+            override fun <T : ViewModel?> create(
+                key: String,
+                modelClass: Class<T>,
+                handle: SavedStateHandle
+            ): T {
+                val viewModel =
+                    KatakanaViewModel(handle) as T
 
                 try {
                     @Suppress("UNCHECKED_CAST")

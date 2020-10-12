@@ -59,6 +59,7 @@ interface AppComponent {
     fun inject(listProductPreviewFragment: ListProductPreviewFragment)
     fun inject(productDetailFragment: ProductDetailFragment)
     fun inject(learningFragment: LearningFragment)
+    fun inject(katakanaFragment: KatakanaFragment)
     fun inject(landingPageFragment: LandingPageFragment)
     fun inject(gamingFragment: GamingFragment)
 

@@ -38,6 +38,13 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_landing_page_to_katakana_fragment"
+            app:destination="@id/gamingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -52,6 +59,13 @@
         android:name="com.phanduy.tekotest.ui.main.GamingFragment"
         android:label="@string/product_detail_title"
         tools:layout="@layout/fragment_gaming">
+    </fragment>
+
+    <fragment
+        android:id="@+id/katakanaFragment"
+        android:name="com.phanduy.tekotest.ui.main.KatakanaFragment"
+        android:label="@string/product_detail_title"
+        tools:layout="@layout/fragment_katakana">
     </fragment>
 
 </navigation>
