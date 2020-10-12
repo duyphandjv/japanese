@@ -44,7 +44,7 @@ class LandingPageFragment : Fragment() {
 
                 override fun goToLearningKatakanaAlphabet() {
                     val direction =
-                        LandingPageFragmentDirections.actionLandingPageToLearningFragment()
+                        LandingPageFragmentDirections.actionLandingPageToKatakanaFragment()
                     findNavController().navigate(direction)
                 }
 

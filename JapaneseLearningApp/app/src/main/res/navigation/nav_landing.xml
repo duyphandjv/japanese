@@ -40,7 +40,7 @@
             app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_landing_page_to_katakana_fragment"
-            app:destination="@id/gamingFragment"
+            app:destination="@id/katakanaFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
