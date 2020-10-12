@@ -20,4 +20,8 @@ data class JapaneseWord(val id: Int, val group: String, val word: String) {
         }
     }
 
+    fun getImagePath(): String {
+        return "hiraganaGame/icon_${word}.png"
+    }
+
 }

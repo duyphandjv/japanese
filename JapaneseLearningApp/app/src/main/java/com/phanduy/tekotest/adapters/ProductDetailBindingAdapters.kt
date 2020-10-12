@@ -32,12 +32,11 @@ fun bindImageFromUrl(view: ImageView, imageUrl: String?) {
 @BindingAdapter("imageFromName")
 fun bindImageFromAssest(view: ImageView, name: String?) {
     Picasso.get()
-        .load("file:///android_asset/icon_$name.png")
-        .resize(50, 50)
+        .load("file:///android_asset/${name}")
+        .resize(100, 100)
         .centerCrop()
         .placeholder(R.drawable.empty_image)
         .error(R.drawable.empty_image)
-        .fit()
         .into(view)
 }
 

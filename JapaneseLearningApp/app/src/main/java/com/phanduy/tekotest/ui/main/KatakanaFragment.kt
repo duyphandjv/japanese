@@ -108,8 +108,9 @@ class KatakanaFragment : Fragment() {
     }
 
     fun getDrawable(filename : String) : Drawable {
+        val name = "katakanaAlphabet/${filename}"
         return Drawable.createFromResourceStream(resources,
-            TypedValue(), resources.getAssets().open(filename), null)
+            TypedValue(), resources.getAssets().open(name), null)
     }
 
     interface Callback {
